@@ -114,7 +114,7 @@
         <h3>{{ 'labels.heading.Loan Accounts' | translate }}</h3>
         <!-- No Loan Accounts Message -->
         <div class="no-account-message" *ngIf="!loanAccounts">
-          <h1>There are no Loan Accounts found.</h1>
+          <h1>{{ 'labels.text.No loan accounts' | translate }}</h1>
         </div>
       </div>
     </div>
@@ -310,7 +310,7 @@
     </div>
     <!-- No Saving Account message   -->
     <div class="no-account-message" *ngIf="!(savingAccounts | accountsFilter: 'saving' : 'open' : 'isSavings')">
-      <h1>There are no Saving Accounts found.</h1>
+      <h1>{{ 'labels.text.No saving accounts' | translate }}</h1>
     </div>
     <div class="layout-column flex-50">
       <div class="layout-row align-flex-end">
@@ -456,7 +456,7 @@
     </div>
     <!-- No Fixed Deposit accounts message -->
     <div class="no-account-message" *ngIf="!(savingAccounts | accountsFilter: 'saving' : 'open' : 'isFixed')">
-      <h1>There are no Fixed Deposit accounts found.</h1>
+      <h1>{{ 'labels.text.No deposit accounts' | translate }}</h1>
     </div>
     <div class="layout-column flex-50">
       <div class="layout-row align-flex-end">
@@ -581,7 +581,7 @@
     </div>
     <!-- No Recurring Deposit Accounts message -->
     <div class="no-account-message" *ngIf="!(savingAccounts | accountsFilter: 'saving' : 'open' : 'isRecurring')">
-      <h1>There are no Recurring Deposit Accounts found.</h1>
+      <h1>{{ 'labels.text.No recurring accounts' | translate }}</h1>
     </div>
 
     <div class="layout-column flex-50">
@@ -715,7 +715,7 @@
     </div>
     <!-- No shares account message -->
     <div class="no-account-message" *ngIf="!shareAccounts">
-      <h1>There are no Shares Accounts found.</h1>
+      <h1>{{ 'labels.text.No shares accounts' | translate }}</h1>
     </div>
 
     <div class="layout-column flex-50">
